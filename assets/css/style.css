@@ -27,7 +27,6 @@ body {
   position: absolute;
   top: 0;
   background-color: transparent;
-  background-color: #32323220;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -37,7 +36,6 @@ body {
 }
 
 .logo {
-  /* color: #ffd900d7; */
   color: #F8F8F8;
   -webkit-text-stroke: 2px #212121;
   text-shadow: 1px 1px 2px #D81E5B;
@@ -79,19 +77,9 @@ body {
 
 .banner {
   position: relative;
-  color: #fff;
-  /* background-image: url('../imagens/pexels-craig-adderley-1557686.jpg'); */
-  /* background-image: url('../imagens/pexels-edward-eyer-667986.jpg'); */
-  /* background-image: url('../imagens/pexels-nicolas-postiglioni-991970.jpg'); */
-
-  /* background-image: url('../imagens/pexels-oleksandr-pidvalnyi-1009068.jpg'); */
-  /* background-image: url('../imagens/pexels-pixabay-52994.jpg'); */
-  /* background-image: url('../imagens/pexels-pixabay-65210.jpg'); */
-  /* background-image: url('../imagens/pexels-tembela-bohle-1089932.jpg'); */
-  /* background-image: url('../imagens/pexels-vedanti-250465.jpg'); */
-   
+  color: #fff;   
   background-image: url('../imagens/pexels-vedanti-250465.jpg');
-  background-position: 0 0;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -138,7 +126,6 @@ body {
   margin: 0 auto;
   margin-top: 5rem;
   width: 80%;
-  /* background-color: #FDF0D5; */
   padding: 0 10rem;
 }
 
@@ -162,11 +149,14 @@ body {
 .sobre__descricao {
   font-size: 1.2rem;
   font-family: 'Be Vietnam Pro', sans-serif;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .mapa {
   width: 100%;
-  /* background-color: #FDF3DF; */
   margin: 0 auto;
   padding: 8rem 10rem;
 }
@@ -199,12 +189,91 @@ body {
   border: #000 1px solid;
   height: 100px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #272A31;
 }
 
 .rodape__descricao {
+  /* border-bottom: 1px #C5C2C2 solid; */
   color: #FDF0D5;
   text-align: center;
+}
+
+.container-imagem {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.rodape__imagem {
+  width: 15px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.rodape__link {
+  color: #FDF0D5;
+}
+
+@media screen and (max-width: 1000px) {
+  .sobre {
+    width: 100%;
+  }
+  .sobre__conteudo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sobre__imagem {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .sobre__conteudo {
+    flex-direction: column;
+    align-items: center;
+  }    
+}
+
+@media screen and (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    position: relative;
+    background-color: #323232;
+    height: auto;
+    width: 100%;
+  }
+  .logo {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  .menu {
+    width: 90%;
+  }
+  .menu__lista {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu__item {
+    margin-bottom: 2rem;
+    border: 1px solid #F8F8F8;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .menu__link {
+    margin: 0;
+    display: block;
+  }
+
+  .banner__titulo {
+    font-size: 2rem;
+  }
+  .banner__botao {
+    font-size: 1.5rem;
+    width: 50%;
+  }
 }

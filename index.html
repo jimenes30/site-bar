@@ -12,12 +12,12 @@
   </head>
   <body>
     <header class="cabecalho">
-      <h1 class="logo">Logo/Code</h1>
+      <h1 class="logo">Bar code &lt;/></h1>
       <nav class="menu">
         <ul class="menu__lista">
-          <li class="menu__item"><a class="menu__link" href="">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="">Sobre</a></li>
-          <li class="menu__item"><a class="menu__link" href="">Contato</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#sobre">Sobre</a></li>
+          <li class="menu__item"><a class="menu__link" href="#rodape">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -25,32 +25,36 @@
     <main class="principal">
       <section class="banner">
         <div class="banner-container">
-          <!-- <img src="" alt="" class="banner__imagem"> -->
-          <h2 class="banner__titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laudantium enim?</h2>
-          <button class="banner__botao">Saiba mais</button>
+          <h2 class="banner__titulo">Não deixe para amanhã a cerveja que você pode beber hoje!</h2>
+          <button class="banner__botao" type="button">Saiba mais</button>
         </div>
       </section>
 
-      <section class="sobre">
+      <section id="sobre" class="sobre">
         <h2 class="sobre__titulo">Sobre</h2>
         <div class="sobre__conteudo">
           <img class="sobre__imagem" src="./assets/imagens/pexels-pixabay-52994.jpg" alt="">
-          <p class="sobre__descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat libero vero illo minima doloribus modi doloremque temporibus in, reiciendis voluptatum esse ea omnis, cupiditate dolore, placeat laboriosam quisquam eveniet quo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quae, dolore veritatis</p>
+          <p class="sobre__descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus libero qui, non alias consequatur cum sit cupiditate saepe, animi dolores laborum, quo adipisci iusto sunt deleniti eveniet totam dignissimos rem!</p>
         </div>
       </section>
 
       <section class="mapa">
         <h2 class="mapa__titulo">Localização</h2>
         <div class="mapa__conteudo">
-          <p class="mapa__descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p class="mapa__descricao">Essa é a localização do nosso bar, venha nos visitar!</p>
           <iframe class="mapa__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1057.6455514288464!2d-49.06832241375083!3d-26.91994873101891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df18c3a6ef3d63%3A0x5129e70fec01cd5f!2sNeumarkt%20Trade%20And%20Financial%20Center!5e0!3m2!1spt-BR!2sbr!4v1658695340230!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
       
     </main>
 
-    <footer class="rodape">
-      <p class="rodape__descricao">&copy; 2022 Copyright Alfredo Jimenes - Todos os direitos reservados.</p>
+    <footer id="rodape" class="rodape">
+      <figure class="container-imagem">
+        <figcaption class="rodape__descricao">Para mais informações </figcaption>
+        <img class="rodape__imagem" src="./assets/imagens/tel.svg" alt="">
+        <figcaption class="rodape__descricao">(47) 9 xxxx-xxxx</figcaption>
+      </figure>
+      <p class="rodape__descricao">&copy; 2022 Copyright <a class="rodape__link" href="https://github.com/Jimenes30">Alfredo Jimenes</a> - Todos os direitos reservados.</p>
     </footer>
 
     <script src="./assets/js/main.js"></script>    
